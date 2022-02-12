@@ -1,0 +1,37 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "package1VscodeNew1",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "force-app",
+            "package": "package1V2",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        },
+        {
+            "path": "force-app",
+            "package": "package1",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        }
+    ],
+    "name": "DevPackageOrg1",
+    "namespace": "myspacetest2022",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "package1VscodeNew1": "0Ho2v000000Kz2wCAC",
+        "package1VscodeNew1@0.1.0-1": "04t2v000007Ogq5AAC",
+        "package1V2": "0Ho2v000000Kz31CAC",
+        "package1V2@0.1.0-1": "04t2v000007OgqFAAS",
+        "package1": "0Ho2v000000Kz36CAC",
+        "package1@0.1.0-1": "04t2v000007OgqKAAS"
+    }
+}

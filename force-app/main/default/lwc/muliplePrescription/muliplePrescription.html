@@ -1,0 +1,75 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            Insert Mulitple Doctor Prescriptions
+        </h3>
+
+        <div slot="footer">
+            <lightning-button label="Add" variant="brand" onclick={addRow} >
+
+            </lightning-button>
+
+            <lightning-button label="Save" variant="brand" onclick={saveMultplePresciprtion} >
+
+            </lightning-button>
+
+        </div>
+
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer" aria-labelledby="element-with-table-label other-element-with-table-label">
+            <thead>
+              <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="S.No">S.No</div>
+                  </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate" title="Presciption Name">Presciption Name</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate" title="Prescrition Type">Prescrition Type</div>
+                </th>
+                <th class="" scope="col">
+                  <div class="slds-truncate" title="Prescrition Details">Prescrition Details</div>
+                </th>
+               
+              </tr>
+            </thead>
+            <tbody>
+                <template for:each={presRecordList} for:item="prescription" for:index="index" >
+                    <tr key={keyIndex}>
+                        <td>{index}</td>
+                        <td>
+                            <lightning-input name="preName" access-key={index}  type='text' onchange={ChangHandler}>
+
+                            </lightning-input>
+                        </td>
+                        <td>
+                            <lightning-input name="preType" access-key={index}  type='text' onchange={ChangHandler}>
+                                
+                            </lightning-input>
+                        </td>
+
+                        <td>
+                            <lightning-input name="preDetail" access-key={index}  type='text' onchange={ChangHandler}>
+                                
+                            </lightning-input>
+                        </td>
+
+
+                        <td>
+                           <lightning-icon icon-name="action:delete"  alternative-text="Delete prescription" access-key={index}  onclick={removeRow} >
+
+                           </lightning-icon>
+                        </td>
+
+                    </tr>
+
+                </template>
+             
+            </tbody>
+          </table>
+
+        
+
+
+    </lightning-card>
+</template>

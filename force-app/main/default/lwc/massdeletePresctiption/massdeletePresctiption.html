@@ -1,0 +1,25 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="standard:contact" size="small"></lightning-icon>
+            Delete Multile prescription.
+        </h3>
+        <div slot="footer">
+            <lightning-button label="Delete selected Records"  variant="brand" onclick={delSelRecords}></lightning-button>
+            <div>
+                {message}
+            </div>
+        </div>
+
+        <p class="slds-p-horizontal_small">
+            <lightning-datatable data={prescriptions.data}    columns={columns} key-field="id" onrowselection={prepareSelectedRows}>
+
+            </lightning-datatable>
+        </p>
+
+
+     
+
+    </lightning-card>
+</template>

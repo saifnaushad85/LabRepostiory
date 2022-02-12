@@ -1,0 +1,9 @@
+<template>
+    <lightning-input type="search" onchange={handlekeyChange} class="slds-m-bottom_small" label="Search Presciption">
+
+    </lightning-input>
+    <template for:each={presciList} for:item="presriObj" for:index="index" >
+        <option key={presriObj.Id} >{presriObj.Name} </option>
+
+    </template>
+</template>
