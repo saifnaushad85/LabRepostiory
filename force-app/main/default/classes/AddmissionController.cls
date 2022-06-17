@@ -1,5 +1,8 @@
 public class AddmissionController {
     
+    /*
+    method last update in june
+    */
     @AuraEnabled(Cacheable=true)
     public static List<PAdmission__c> getAdmissionList()
     {
